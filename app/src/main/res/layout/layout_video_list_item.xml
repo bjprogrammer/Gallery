@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/parent"
+    android:background="@android:color/white">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:visibility="gone"
+        android:background="@android:color/white"
+        android:id="@+id/media_container">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:background="@android:color/white"
+            android:contentDescription="@string/todo" />
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/exo_controls_rewind"
+            android:layout_gravity="center"
+            android:id="@+id/play_backward"
+            android:animateLayoutChanges="true"
+            android:layout_marginStart="-105dp"
+            android:layout_marginBottom="15dp"
+            android:contentDescription="@string/todo" />
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/exo_controls_fastforward"
+            android:layout_gravity="center"
+            android:id="@+id/play_forward"
+            android:animateLayoutChanges="true"
+            android:layout_marginStart="65dp"
+            android:layout_marginBottom="15dp"
+            android:contentDescription="@string/todo" />
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/exo_controls_play"
+            android:layout_gravity="center"
+            android:id="@+id/play_control"
+            android:animateLayoutChanges="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:contentDescription="@string/todo" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_volume_up_grey_24dp"
+            android:layout_gravity="end|bottom"
+            android:id="@+id/volume_control"
+            android:animateLayoutChanges="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:contentDescription="@string/todo" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:visibility="gone"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textSize="20sp"
+            android:layout_gravity="bottom"
+            android:background="@android:color/darker_gray" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:progressTint="@color/colorAccent"
+            android:visibility="gone"
+            android:id="@+id/seekbar"
+            android:progressBackgroundTint="@android:color/white"
+            android:layout_margin="16dp" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@android:color/white"
+        android:id="@+id/image_container">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:background="@android:color/white"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/image_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:layout_gravity="bottom"
+            android:background="#29000000" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@android:color/white"
+        android:id="@+id/placeholder_container">
+
+        <ImageView
+            android:id="@+id/placeholder"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:background="@android:color/white"
+            android:contentDescription="@string/todo" />
+
+    </FrameLayout>
+</RelativeLayout>
+
+
+
+
+
+
